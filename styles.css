@@ -25,3 +25,19 @@ a:hover
 {
 	 color: black;
 }
+@media only screen and (max-width: 600px) {
+  .mobile_
+    {
+      width: 80%;
+      margin: auto;
+    }
+  .mobile_head
+    {
+      font-size: 27px;
+      margin-top: 28px;
+    }
+  .mobile_sub
+    {
+      margin-top: -20px;
+    }
+  }
