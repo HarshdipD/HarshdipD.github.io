@@ -21,14 +21,15 @@
 	font-size: 30px;
 	margin: 10px 5px 10px 5px;
 }
-a:hover
+.cards
 {
-	 color: black;
+  width: 60%;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
   .mobile_
     {
-      width: 80%;
+      width: 100%;
       margin: auto;
     }
   .mobile_head
@@ -39,5 +40,10 @@ a:hover
   .mobile_sub
     {
       margin-top: -20px;
+    }
+    .cards
+    {
+      width: 100%;
+      margin: 0 auto;
     }
   }
