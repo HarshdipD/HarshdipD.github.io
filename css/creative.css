@@ -70,6 +70,16 @@ body {
   background-color: #fff;
 }
 
+.about-hh{
+  height: 70vh;
+}
+
+@media (min-width: 576px) {
+  .about-hh {
+    height: 50vh;
+  }
+}
+
 
 
 [tabindex="-1"]:focus {
@@ -10656,7 +10666,7 @@ hr.light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #3a46f4 !important;
 }
 
 @media (min-width: 992px) {
@@ -10690,13 +10700,13 @@ hr.light {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #f4623a;
+    color: #3a56f4;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: hsl(239, 89%, 59%);
   }
 }
 
