@@ -10672,11 +10672,11 @@ hr.light {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #3a46f4;
+  color: #f4623a;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #3a46f4 !important;
+  color: #f4623a !important;
 }
 
 @media (min-width: 992px) {
@@ -10710,7 +10710,7 @@ hr.light {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #3a56f4;
+    color: #f4623a;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
