@@ -80,6 +80,16 @@ body {
   }
 }
 
+.skills-hh{
+  height: 100vh;
+}
+
+@media (min-width: 576px) {
+  .skills-hh {
+    height: 20vh;
+  }
+}
+
 
 
 [tabindex="-1"]:focus {
