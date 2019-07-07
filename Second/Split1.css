@@ -1,0 +1,72 @@
+.split1 {
+  height : 100%;
+  width : 50%;
+}
+
+.split2 {
+  height : 100%;
+  width : 50%;
+}
+
+.left {
+  left : 0;
+}
+
+.right {
+  right : 0;
+}
+
+.image {
+  background-image: url(right.jpg);
+  background-size: cover;
+}
+
+.main_text {
+  margin-top: 9%;
+}
+
+.ButtonProp {
+  background-color: white;
+  border: 4px solid #000080;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ButtonProp:hover {
+  background-color: #000080;
+  border: 4px solid white;
+  color: white;
+}
+
+.Anim {
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+   animation: mymove 3s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .split1 {
+        width: 0%;
+    }
+    .split2 {
+        width: 100%;
+    }
+}
