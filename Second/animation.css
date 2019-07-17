@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px) {
+  .hideinmobile {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.menu{
+  text-align: center;
+}
+
+.menu::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: width .2s;
+}
+
+.menu:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.fadeIn1{
+  animation: 1s ease-out 0s 1 Hi;
+}
+.fadeIn2{
+  animation: 3s ease-out 0s 1 Harshdip;
+}
+
+.divFadeIn{
+  animation: 5s ease-out 0s 1 mainPageDiv;
+}
+
+@keyframes Hi {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Harshdip {
+  0% {
+    opacity: 0;
+  }
+  60%{
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mainPageDiv {
+  0% {
+    opacity: 0;
+  }
+  80%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

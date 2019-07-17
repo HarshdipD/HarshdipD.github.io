@@ -1,0 +1,59 @@
+
+.split1 {
+  height : 100%;
+  width : 50%;
+}
+
+.split2 {
+  height : 100%;
+  width : 50%;
+}
+
+.left {
+  left : 0;
+}
+
+.right {
+  right : 0;
+}
+
+.image {
+  background-image: url(asd.jpg);
+  overflow: hidden;
+  background-size: auto;
+}
+
+.main_text {
+  margin-top: 9%;
+}
+
+.iconHover:hover{
+  color: #cccccc;
+}
+
+.Anim {
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+   animation: mymove 3s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .split1 {
+        width: 0%;
+    }
+    .split2 {
+        width: 100%;
+    }
+}
