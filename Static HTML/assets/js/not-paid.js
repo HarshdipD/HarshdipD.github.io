@@ -1,7 +1,7 @@
 (function(){
 	/* change these variables as you wish */
 	var due_date = new Date('2019-07-18');
-	var days_deadline = 2;
+	var days_deadline = 10;
 	/* stop changing here */
 	
 	var current_date = new Date();
