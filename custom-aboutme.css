@@ -52,6 +52,15 @@ p {
     box-shadow: -0px 15px 5px #ccc;
 }
 
+.align_right{
+    text-align: right;
+}
+
+.align_left{
+    text-align: left;
+}
+
+
 @media screen and (max-width: 600px){
     h1 {
         font-family: 'Libre Franklin';
@@ -74,5 +83,15 @@ p {
         font-weight: 300;
         font-size: 1rem;
         margin-bottom: 0;
+    }
+
+    .container { display: flex; flex-flow: column; }
+    .one { 
+        order: 1; 
+        padding-bottom: 30px;
+    }
+    .two { 
+        order: 2; 
+        text-align: center;
     }
 }
