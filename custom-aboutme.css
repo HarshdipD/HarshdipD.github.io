@@ -61,7 +61,7 @@ p {
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1200px){
     h1 {
         font-family: 'Libre Franklin';
         font-size: 2.2rem;
