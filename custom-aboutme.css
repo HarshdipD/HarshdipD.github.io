@@ -60,6 +60,9 @@ p {
     text-align: left;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
 @media screen and (max-width: 1200px){
     h1 {

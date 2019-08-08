@@ -35,6 +35,9 @@ p {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
+a:hover{
+    text-decoration: none;
+}
 #profile-img {
     display: block;
     margin: 0 auto;
