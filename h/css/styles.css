@@ -1,0 +1,157 @@
+body {
+    background-color: #000000;
+}
+
+/* importing font */
+@font-face {
+  font-family: default_font;
+  src: url('../images/EurostileLTStd.otf');
+}
+@font-face {
+  font-family: img_text_font;
+  src: url('../images/EurostileLTStd-img_text.otf');
+}
+*, a {
+  font-family: default_font;
+}
+.hvrbox-text {
+  font-family: img_text_font;
+}
+/*end of font import*/
+
+/* dont let user select anything */
+* {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */     
+}
+
+/* changing navbar height */
+.navbar {
+    min-height: 80px;
+  }
+
+/* Modify the background color */ 
+.navbar-custom { 
+    background-color: #000000; 
+}
+
+/* Modify brand and text color */      
+.navbar-custom .navbar-brand, nav .navbar-nav li a {
+    color: white;
+    }
+
+
+/* images CSS */
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
+  img, video {
+    max-width: 100%;
+    vertical-align: middle;
+    
+  }
+  
+  /* Masonry grid */
+.masonry {
+    transition: all .5s ease-in-out;
+    column-gap: 30px;
+    column-fill: initial;
+}
+  
+  /* Masonry item */
+  .masonry .brick {
+    margin-bottom: 30px;
+    display: inline-block; /* Fix the misalignment of items */
+    vertical-align: top; /* Keep the item on the very top */
+  }
+  
+  /* Gutterless masonry */
+  .masonry.gutterless {
+    column-gap: 0;
+  }
+  
+  .masonry.gutterless .brick {
+    margin-bottom: 0;
+  }
+  
+  /* Masonry on tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  
+  /* Masonry on big screens */
+  @media only screen and (min-width: 1024px) {
+    .masonry {
+      column-count: 3;
+    }
+  } 
+
+.hvrbox, .hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+/* end of image CSS */
+

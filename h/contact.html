@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Juan Peña</title>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body style="visibility: hidden;" id="visib_body">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">DIR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dop.html">DOP</a>
+            </li>
+        </ul>
+        <p class="navbar-brand">Juan Peña</p>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+
+    <div class="container" style="padding-top: 50px;">
+        <div class="text-center" style="padding: 10px;">
+            <a href="juanguiller@gmail.com" class="inline_block contact_link" style="color: white">juanguiller@gmail.com</a>
+        </div>
+        <div class="text-center" style="padding: 10px;">
+            <a href="tel:+5491156550570" class="inline_block contact_link" style="color: white">+54911 56550570</a>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        // Fade in when page loads
+        $(document).ready(function () {
+            $("body").hide();
+            $('#visib_body').css('visibility', 'visible');
+            $("body").fadeIn(1000);
+        });
+
+        // Fade out when contact is clicked
+        $("#fade_out").click(function () {
+            event.preventDefault();
+            newLocation = this.href;
+            $('body').fadeOut(1000, newpage);
+        });
+
+        function newpage() {
+            window.location = newLocation;
+        }
+    </script>
+</body>
+
+</html>
