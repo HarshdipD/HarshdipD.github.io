@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>What animal are you?</title>
+</head>
+
+<body>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">What animal are you?</h1>
+            <p class="col-md-8 fs-4">What animal are you? Take this short quiz.</p>
+        </div>
+    </div>
+    <div>
+        <p class="px-5">Question 1: What animal do you think you are?</p>
+        <div class="input-group mb-3 px-5">
+            <span class="input-group-text" id="basic-addon1">Enter here</span>
+            <input type="text" class="form-control" placeholder="I am...">
+          </div>
+          <button class="mx-5 btn btn-primary" onclick="result()">Next question</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function result() {
+            window.location.href = "./result.html";
+        }
+    </script>
+</body>
+</html>
