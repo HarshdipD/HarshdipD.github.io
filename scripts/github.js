@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    const githubRepos = document.getElementById("#github-repos");
+    const githubRepos = document.getElementById("github-repos");
 
     fetch('https://api.github.com/users/HarshdipD/repos?per_page=30&sort=created&type=owner')
         .then((response) => response.json())

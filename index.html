@@ -3,73 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1">
-    <meta property="og:site_name" content="Harshdip Singh Deogan - Website" />
-    <meta property="og:title" content="Harshdip Singh Deogan" />
-    <meta property="og:description" content="Software Developer" />
-    <meta property="og:image" content="images/headshot.png" />
-    <meta property="og:type" content="website" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="Harshdip Singh Deogan - Website"/>
+    <meta property="og:title" content="Harshdip Singh Deogan"/>
+    <meta property="og:description" content="Software Developer"/>
+    <meta property="og:image" content="images/headshot.png"/>
+    <meta property="og:type" content="website"/>
     <title>Harshdip Singh Deogan | Software Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="scripts/github.js"></script>
     <script src="https://kit.fontawesome.com/50f9893c5e.js"></script>
-    
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJGFL4RG4Z"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-VJGFL4RG4Z');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-VJGFL4RG4Z');
     </script>
-
 </head>
 
 <body>
-    <div class="page-container">
-        <div class="page-content">
-            <div class="left">
-                <img src="images/profile.jpg" alt="A picture of me!" class="headshot" />
-
-                <div class="text-content">
-                    <h1>Hello there.</h1>
-
-                    <p>I'm Harshdip Singh Deogan and I'm a Software Developer at HALEO Clinic.</p>
-                </div>
-
-                <a href="Resume-HarshdipSinghDeogan.pdf" target="_blank" aria-label="Check out my resume!"
-                    class="resume">Resume</a>
-
-                <footer>
-                    <p>
-                        Find me on
-                    </p>
-                    <a href="https://www.linkedin.com/in/deogan/" target="_blank" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-
-                    <a href="https://www.github.com/HarshdipD/" target="_blank" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </footer>
+<div class="page-container">
+    <div class="page-content">
+        <div class="left">
+            <img src="images/profile.jpg" alt="A picture of me!" class="headshot">
+            <div class="text-content">
+                <h1>Hello there.</h1>
+                <p>I'm Harshdip Singh Deogan and I'm a Software Developer at HALEO Clinic.</p>
             </div>
-
-            <div class="right">
-                <div class="github-icon"><a href="https://www.github.com/HarshdipD/" target="_blank"
-                        aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-                <div class="github-repos" id="#github-repos">
-                    <span>Having some trouble looking up my recent repos, so you can check out my <a
-                            href="https://github.com/Scetch/" target="_blank" aria-label="GitHub">GitHub!</a></span>
-                </div>
+            <a href="Resume-HarshdipSinghDeogan.pdf" target="_blank" aria-label="Check out my resume!" class="resume">Resume</a>
+            <footer>
+                <p>Find me on</p>
+                <a href="https://www.linkedin.com/in/deogan/" target="_blank" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com/HarshdipD/" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+            </footer>
+        </div>
+        <div class="right">
+            <div class="github-icon">
+                <a href="https://www.github.com/HarshdipD/" target="_blank" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="github-repos" id="github-repos">
+                <span>Having some trouble looking up my recent repos, so you can check out my <a
+                        href="https://github.com/Scetch/" target="_blank" aria-label="GitHub">GitHub!</a></span>
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
