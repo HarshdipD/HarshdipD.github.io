@@ -16,72 +16,89 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .link {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .link:hover {
+            color: #000;
+        }
+
+        .link {
+            transition: color 0.15s ease-in-out;
         }
     </style>
 </head>
 
-<body class="bg-white text-gray-800">
-    <div class="max-w-2xl mx-auto px-4 py-16 space-y-12">
+<body class="text-gray-800 pb-16">
+    <div class="max-w-3xl mx-auto px-8 md:px-4 py-16 space-y-16">
         <!-- Header -->
-        <header class="space-y-4">
-            <img src="images/profile.png" alt="Harshdip Singh Deogan" class="w-24 h-24 rounded-full">
+        <header class="space-y-6">
+            <img src="images//profile.png" alt="Harshdip Singh Deogan" class="w-24 h-24 rounded-full">
             <h1 class="text-3xl font-semibold">Harshdip Singh Deogan</h1>
             <p class="text-lg text-gray-600">
-                Software Developer at Toolbx<br>
-                Founding Engineer at <a href="https://eztrackr.app?utm_source=hsdeogan"
-                    class="text-blue-600 hover:text-blue-800" target="_blank">Eztrackr</a>
+                Software Developer at Toolbx;<br>
+                Founding Engineer at <a href="https://eztrackr.app?utm_source=hsdeogan" class="link"
+                    target="_blank">Eztrackr</a>.
             </p>
-        </header>
-
-        <div>
-            <div class="flex items-center gap-6">
-                <a href="Resume-HarshdipSinghDeogan.pdf" target="_blank" class="px-4 py-2 hover:bg-gray-100 rounded-md">
-                    <i class="fa-solid fa-file-pdf"></i> Resume
+            <div class="flex items-center">
+                <a href="Resume-HarshdipSinghDeogan.pdf" target="_blank" class="link font-normal">
+                    Resume
                 </a>
-                <a href="https://www.linkedin.com/in/deogan/" target="_blank"
-                    class="text-gray-600 hover:bg-gray-100 rounded-md text-2xl">
-                    <i class="fab fa-linkedin"></i>
+                <span class="text-gray-600 mx-2">• </span>
+                <a href="https://www.linkedin.com/in/deogan/" target="_blank" class="link font-normal">
+                    LinkedIn
                 </a>
-                <a href="https://www.github.com/HarshdipD/" target="_blank"
-                    class="text-gray-600 hover:bg-gray-100 rounded-md text-2xl">
-                    <i class="fab fa-github"></i>
+                <span class="text-gray-600 mx-2">•</span>
+                <a href="https://www.github.com/HarshdipD/" target="_blank" class="link font-normal">
+                    GitHub
                 </a>
             </div>
-        </div>
+        </header>
 
         <!-- About -->
         <section class="space-y-4">
             <p class="text-gray-700">
-                👋 Hi, I'm Harshdip Singh. I'm a software developer based on 📍 <strong>Toronto, ON</strong>.
+                👋 Hi, I'm Harshdip Singh. I'm a software developer based in 📍 <strong>Toronto, ON</strong>.
             </p>
             <p class="text-gray-700">
-                I'm currently working at Toolbx as a Software Engineer. Toolbx is a platform
-                that helps small businesses manage their tools and equipment.
+                I'm currently working at Toolbx as a Software Engineer, an ecommerce and CRM platform in the construction
+                industry.
             </p>
             <p class="text-gray-700">
-                As a side project, I'm also building Eztrackr, a job hunt management platform that helps job seekers
-                track applications, generate
-                AI-powered responses, and stay organized throughout their job search journey.
+                As a side project, I'm also building <a href="https://eztrackr.app?utm_source=hsdeogan" class="link"
+                    target="_blank">Eztrackr</a>, a job hunt management platform that helps job seekers track applications,
+                generate AI-powered responses, and stay organized throughout their job search journey.
+            </p>
+
+            <p class="text-gray-700">
+                I'm not just a software developer, I'm a product guy. I care about and perfect the user experience for the
+                people who will use the software I work on. 
             </p>
         </section>
 
         <!-- Achievements -->
-        <section>
-            <h2 class="text-lg font-semibold mb-2">Some cool things I've done</h2>
+        <section class="space-y-4">
+            <h2 class="text-lg font-semibold">Some cool things I've done</h2>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li><a href="https://www.tribuneindia.com/news/archive/gyan-zone/in-the-realm-of-fantasy-14362/"
-                        target="_blank" class="font-semibold underline">Published</a> a book at age 14</li>
-                <li>Attended 10 hackathons during university years at University of Windsor</li>
-                <li>Tutored students for exam and interview preparation</li>
+                <li>Wrote a <a href="https://www.tribuneindia.com/news/archive/gyan-zone/in-the-realm-of-fantasy-14362/"
+                        target="_blank" class="link">book</a> and had it published at age 14</li>
+                <li>Attended 10+ <a href="https://devpost.com/HarshdipD" target="_blank" class="link">hackathons</a>
+                    (and won some) during university years at University of Windsor</li>
                 <li>Elected as Career Advisor in Computer Science department (4th year)</li>
-                <li>Teaching Assistant for multiple Computer Science courses</li>
+                <li>Worked as a Teaching Assistant for multiple Computer Science courses</li>
+                <li>Tutored students for exam and interview preparation</li>
             </ul>
         </section>
 
         <!-- Experience -->
-        <section>
-            <h2 class="text-lg font-semibold mb-2">I've previously worked at</h2>
-            <ul class="list-disc list-inside">
+        <section class="space-y-4">
+            <h2 class="text-lg font-semibold">I've previously worked at</h2>
+            <ul class="list-disc list-inside space-y-2">
                 <li><b>Rangle.io</b> - Software Engineer <span class="text-gray-500 text-sm">(2023-2024)</span></li>
                 <li><b>Haleo Clinic</b> - Founding Engineer <span class="text-gray-500 text-sm">(2020-2023)</span></li>
                 <li><b>Deloitte</b> - Software Engineer Intern <span class="text-gray-500 text-sm">(2020)</span></li>
@@ -90,8 +107,8 @@
         </section>
 
         <!-- Education -->
-        <section>
-            <h2 class="text-lg font-semibold mb-2">Education</h2>
+        <section class="space-y-4">
+            <h2 class="text-lg font-semibold">Education</h2>
             <p class="text-gray-700">
                 Bachelor of Science - Computer Science (Honours), Minor in Mathematics<br>
                 University of Windsor (2020)
@@ -99,23 +116,22 @@
         </section>
 
         <!-- Skills -->
-        <section>
-            <h2 class="text-lg font-semibold mb-2">Some skills I'm pretty good at</h2>
-            <h3 class="underline mb-2">Backend</h3>
-            <ul class="list-disc list-inside">
-                <li>Laravel</li>
-                <li>Python</li>
-                <li>Node.js</li>
-                <li>React</li>
-                <li>TypeScript</li>
-            </ul>
-            <h3 class="underline mb-2">Frontend</h3>
-            <ul class="list-disc list-inside">
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Next.js</li>
-            </ul>
+        <section class="space-y-4">
+            <h2 class="text-lg font-semibold">My tech stack</h2>
+            <div class="space-y-3">
+                <p>
+                    <span class="mr-2">Backend:</span>
+                    <span class="text-gray-700">Laravel, Python, Node.js, React, TypeScript</span>
+                </p>
+                <p>
+                    <span class="mr-2">Frontend:</span>
+                    <span class="text-gray-700">React, TypeScript, Tailwind CSS, Next.js, Angular</span>
+                </p>
+                <p>
+                    <span class="mr-2">Mobile:</span>
+                    <span class="text-gray-700">Ionic, React Native, Some Flutter and Swift</span>
+                </p>
+            </div>
         </section>
     </div>
 </body>
